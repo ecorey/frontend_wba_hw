@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Grid, Stack } from "@mui/material";
+import { Avatar, Box, Button, Grid, Stack, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
 
 export default function TopNav() {
@@ -14,7 +14,7 @@ export default function TopNav() {
           {/* <img src={logo} alt="logo" /> */}
         </Grid>
         <Grid item md={4} sx={{ borderRight: "2px solid #424242", justifyContent: 'flex-start', display: 'flex', paddingLeft: 0 }}>
-          <div>TEMPLATE PRACTICE</div>
+          <Typography variant="h6" sx={{ fontWeight: 'bold' }}>TEMPLATE PRACTICE</Typography> 
         </Grid>
         <Grid item md={6}>
           <Stack

@@ -8,9 +8,7 @@ export default function Home() {
         <Grid item xs={12}>
           <Stack direction="column" spacing={2} alignItems="center">
             
-            {/* <CustomButton variant="contained" color="primary">
-              Click me
-            </CustomButton> */}
+            
           </Stack>
         </Grid>
       </Grid>
