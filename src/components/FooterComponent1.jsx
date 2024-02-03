@@ -20,22 +20,22 @@ const FooterComponent1 = () => {
         size="small"
         sx={{ 
           width: '100%', 
-          '.MuiInputLabel-root': { color: 'gray' }, // Label color
-          '.MuiOutlinedInput-root': { color: 'white', borderColor: 'white' }, // Input text color
+          '.MuiInputLabel-root': { color: 'gray' }, 
+          '.MuiOutlinedInput-root': { color: 'white', borderColor: 'white' }, 
           '& .MuiOutlinedInput-notchedOutline': {
-            borderColor: 'white', // Border color
+            borderColor: 'white', 
           },
           '&:hover .MuiOutlinedInput-notchedOutline': {
-            borderColor: 'white', // Border hover color
+            borderColor: 'white', 
           },
           '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            borderColor: 'white', // Border color when the input is focused
+            borderColor: 'white', 
           },
           '& .MuiOutlinedInput-input': {
-            color: 'white', // Input text color
+            color: 'white', 
           },
           '& .MuiInputLabel-root.Mui-focused': {
-            color: 'gray', // Label color when the input is focused
+            color: 'gray', 
           }
         }}
       />

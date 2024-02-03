@@ -9,9 +9,9 @@ const FooterComponent3 = () => {
       flexDirection: 'column',
       alignItems: 'center',
       padding: 1,
-      color: 'white', // Ensure text is visible
+      color: 'white', 
     }}>
-      {/* Logo and Text */}
+      
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 1 }}>
         <ScubaDivingSharpIcon sx={{ marginRight: 1 }} />
         <Typography variant="h6">
@@ -19,7 +19,7 @@ const FooterComponent3 = () => {
         </Typography>
       </Box>
 
-      {/* Lorem Ipsum Paragraph */}
+      
       <Typography variant="body2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
       </Typography>

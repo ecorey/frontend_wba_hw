@@ -15,7 +15,7 @@ const FooterComponent2 = () => {
       flexDirection: 'column',
       alignItems: 'center',
       padding: 1,
-      color: 'white', // Ensure text is visible
+      color: 'white', 
     }}>
       <Typography variant="h6" sx={{ marginBottom: 1 }}>
         Join the Community

@@ -8,13 +8,13 @@ const FooterComponent5 = () => {
       flexDirection: 'column',
       alignItems: 'center',
       padding: 1,
-      color: 'white', // Ensure text is visible
+      color: 'white', 
     }}>
       <Typography variant="h6" sx={{ marginBottom: 1 }}>
        Resources
       </Typography>
 
-      {/* Links in a column */}
+      
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Link href="https://www.maths.ed.ac.uk/~v1ranick/papers/seifthreng.pdf" sx={{ margin: '8px 0', color: 'white', textDecoration: 'none', fontWeight: 'normal', fontSize: '0.9rem' }}>Help Center</Link>
         <Link href="https://www.maths.ed.ac.uk/~v1ranick/papers/seifthreng.pdf" sx={{ margin: '8px 0', color: 'white', textDecoration: 'none', fontWeight: 'normal', fontSize: '0.9rem' }}>Partners</Link>
