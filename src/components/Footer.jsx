@@ -49,7 +49,7 @@ const Footer = () => {
       </Grid>
 
       {/* Separation Bar */}
-      <Box sx={{ height: '1px', backgroundColor: 'dimgrey', marginTop: 8, marginBottom: 2 }} />
+      <Box sx={{ height: '1px', backgroundColor: 'dimgrey', marginTop: 8, marginBottom: 2, paddingX: 4  }} />
 
       {/* Bottom Row for Copyright and Legal Links */}
       <Grid container justifyContent="space-between" alignItems="center" sx={{ py: 8 }}>
