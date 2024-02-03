@@ -15,7 +15,7 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        height: '250px',
+        height: '50px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -54,10 +54,10 @@ const Footer = () => {
         variant="body2"
         sx={{
           textAlign: 'center',
-          paddingTop: 2,
+          paddingTop: 5,
         }}
       >
-        © {year} Your Company Name. All rights reserved.
+        © {year} 
       </Typography>
     </Box>
   );
