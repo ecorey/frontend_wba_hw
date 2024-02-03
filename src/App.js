@@ -2,24 +2,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TopNav from "./components/TopNav";
-import { CssBaseline, Box } from "@mui/material";
+import { CssBaseline, Box, ThemeProvider } from "@mui/material";
 import Home from "./pages/home/index";
-import Explore from "./pages/explore/explore"; 
-
+import Explore from "./pages/explore/explore";
+import { theme } from './styles/theme'; 
 function App() {
   return (
-    <Router>
-      <CssBaseline />
-      <Box display="flex" flexDirection="column" minHeight="100vh">
-        <TopNav />
-        <Box component="main" flexGrow={1}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/explore" element={<Explore />} />
-          </Routes>
+    <ThemeProvider theme={theme}> 
+      <Router>
+        <CssBaseline />
+        <Box display="flex" flexDirection="column" minHeight="100vh">
+          <TopNav />
+          <Box component="main" flexGrow={1}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/explore" element={<Explore />} />
+            </Routes>
+          </Box>
         </Box>
-      </Box>
-    </Router>
+      </Router>
+    </ThemeProvider> 
   );
 }
 
