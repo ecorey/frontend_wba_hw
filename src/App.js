@@ -6,9 +6,12 @@ import { CssBaseline, Box, ThemeProvider } from "@mui/material";
 import Home from "./pages/home/index";
 import Explore from "./pages/explore/explore";
 import { theme } from './styles/theme'; 
+import Footer from './components/Footer';
+
+
 function App() {
   return (
-    <ThemeProvider theme={theme}> 
+    <ThemeProvider theme={theme}>
       <Router>
         <CssBaseline />
         <Box display="flex" flexDirection="column" minHeight="100vh">
@@ -19,10 +22,12 @@ function App() {
               <Route path="/explore" element={<Explore />} />
             </Routes>
           </Box>
+          <Footer /> 
         </Box>
       </Router>
-    </ThemeProvider> 
+    </ThemeProvider>
   );
 }
 
 export default App;
+
