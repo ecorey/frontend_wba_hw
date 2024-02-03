@@ -10,7 +10,7 @@ export default function TopNav() {
         alignItems="center"
         height={120}
       >
-        <Grid item md={1} sx={{ justifyContent: 'flex-start', display: 'flex' }}>
+        <Grid item md={1} sx={{  justifyContent: 'flex-start', display: 'flex' }}>
           {/* <img src={logo} alt="logo" /> */}
         </Grid>
         <Grid item md={4} sx={{ borderRight: "2px solid #424242", justifyContent: 'flex-start', display: 'flex', paddingLeft: 0 }}>
@@ -35,9 +35,7 @@ export default function TopNav() {
               variant="contained"
               color="primary"
               disableElevation
-              disableFocusRipple
-              disableRipple
-              disableTouchRipple
+              
             >
               Connect Wallet
             </Button>
