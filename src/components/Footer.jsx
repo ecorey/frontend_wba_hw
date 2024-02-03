@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography, Link } from '@mui/material';
 import FooterColumn from './FooterColumn';
 import FooterComponent1 from './FooterComponent1';
 import FooterComponent2 from './FooterComponent2';
@@ -15,7 +15,6 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        height: '50px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -24,7 +23,7 @@ const Footer = () => {
         padding: 2,
       }}
     >
-      {/* Grid for the upper 80% of the footer */}
+      {/* Grid for the upper part of the footer */}
       <Grid container spacing={0}>
         {/* First row with 2 cols */}
         <FooterColumn xs={6}>
@@ -49,16 +48,27 @@ const Footer = () => {
         </FooterColumn>
       </Grid>
 
-      
-      <Typography
-        variant="body2"
-        sx={{
-          textAlign: 'center',
-          paddingTop: 5,
-        }}
-      >
-        © {year} 
-      </Typography>
+      {/* Separation Bar */}
+      <Box sx={{ height: '1px', backgroundColor: 'dimgrey', marginTop: 8, marginBottom: 2 }} />
+
+      {/* Bottom Row for Copyright and Legal Links */}
+      <Grid container justifyContent="space-between" alignItems="center" sx={{ py: 8 }}>
+        {/* Copyright on the Left */}
+        <Grid item>
+          <Typography variant="body2">
+            © {year} | All Rights Reserved.
+          </Typography>
+        </Grid>
+
+        {/* Legal Links on the Right */}
+        <Grid item>
+          <Typography variant="body2" component="div" sx={{ display: 'flex', alignItems: 'center' }}>
+            <Link href="#" sx={{ color: 'white', textDecoration: 'none', fontWeight: 'light', marginRight: 1 }}>Privacy Policy</Link>
+            <Typography variant="body2" sx={{ color: 'white', fontWeight: 'light' }}>|</Typography>
+            <Link href="#" sx={{ color: 'white', textDecoration: 'none', fontWeight: 'light', marginLeft: 1 }}>Terms of Service</Link>
+          </Typography>
+        </Grid>
+      </Grid>
     </Box>
   );
 };

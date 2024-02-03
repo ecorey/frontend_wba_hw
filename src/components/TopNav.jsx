@@ -14,7 +14,7 @@ export default function TopNav() {
           {/* <img src={logo} alt="logo" /> */}
         </Grid>
         <Grid item md={4} sx={{ borderRight: "2px solid #424242", justifyContent: 'flex-start', display: 'flex', paddingLeft: 0 }}>
-          <div>PREDICTRIX</div>
+          <div>TEMPLATE PRACTICE</div>
         </Grid>
         <Grid item md={6}>
           <Stack
