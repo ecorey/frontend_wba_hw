@@ -1,14 +1,14 @@
 import React from 'react';
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography, Link, useTheme } from '@mui/material';
 import BorderOuterIcon from '@mui/icons-material/BorderOuter';
 import BorderRightIcon from '@mui/icons-material/BorderRight';
-import BorderLeftIcon from '@mui/icons-material/BorderLeft';
 import BorderInnerIcon from '@mui/icons-material/BorderInner';
-import BorderVerticalIcon from '@mui/icons-material/BorderVertical';
 import BorderTopIcon from '@mui/icons-material/BorderTop';
 import BorderAllIcon from '@mui/icons-material/BorderAll';
 
 const FooterComponent2 = () => {
+  const theme = useTheme();
+
   return (
     <Box sx={{ 
       display: 'flex',
@@ -23,27 +23,17 @@ const FooterComponent2 = () => {
 
       {/* Icons */}
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Link href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px' }}>
-          <BorderOuterIcon sx={{ fontSize: '4rem' }} />
-        </Link>
-        <Link href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px' }}>
-          <BorderRightIcon sx={{ fontSize: '4rem' }} />
-        </Link>
-        <Link href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px' }}>
-          <BorderLeftIcon sx={{ fontSize: '4rem' }} />
-        </Link>
-        <Link href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px' }}>
-          <BorderInnerIcon sx={{ fontSize: '4rem' }} />
-        </Link>
-        <Link href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px' }}>
-          <BorderVerticalIcon sx={{ fontSize: '4rem' }} />
-        </Link>
-        <Link href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px' }}>
-          <BorderTopIcon sx={{ fontSize: '4rem' }} />
-        </Link>
-        <Link href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px' }}>
-          <BorderAllIcon sx={{ fontSize: '4rem' }} />
-        </Link>
+        {[BorderOuterIcon, BorderRightIcon,BorderInnerIcon, BorderTopIcon, BorderAllIcon].map((IconComponent, index) => (
+          <Link key={index} href="https://www.palomar.edu/math/wp-content/uploads/sites/134/2017/09/Dimension-Theory.pdf" sx={{ margin: '0 8px', display: 'flex' }}>
+            <IconComponent sx={{ 
+              fontSize: {
+                xs: '2rem', 
+                sm: '3rem', 
+                md: '4rem', 
+              } 
+            }} />
+          </Link>
+        ))}
       </Box>
     </Box>
   );
