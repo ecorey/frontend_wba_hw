@@ -1,5 +1,5 @@
 import { Avatar, Box, Button, Grid, Stack } from "@mui/material";
-
+import { Link } from 'react-router-dom';
 
 export default function TopNav() {
   return (
@@ -7,14 +7,13 @@ export default function TopNav() {
       <Grid
         container
         spacing={3}
-        justifyContent="center"
         alignItems="center"
         height={120}
       >
-        <Grid item md={2} sx={{ borderRight: "1px solid #424242" }}>
+        <Grid item md={1} sx={{ justifyContent: 'flex-start', display: 'flex' }}>
           {/* <img src={logo} alt="logo" /> */}
         </Grid>
-        <Grid item md={4} sx={{ borderRight: "1px solid #424242" }}>
+        <Grid item md={4} sx={{ borderRight: "2px solid #424242", justifyContent: 'flex-start', display: 'flex', paddingLeft: 0 }}>
           <div>PREDICTRIX</div>
         </Grid>
         <Grid item md={6}>
@@ -24,9 +23,13 @@ export default function TopNav() {
             justifyContent="space-evenly"
             alignItems="center"
           >
-            <div>Home</div>
-            <div>Explore</div>
-            <div>Pages</div>
+            {/* Wrap text in Link components */}
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div>Home</div>
+            </Link>
+            <Link to="/explore" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div>Explore</div>
+            </Link>
             
             <Button
               variant="contained"
@@ -38,7 +41,6 @@ export default function TopNav() {
             >
               Connect Wallet
             </Button>
-            <Avatar alt="user" />
           </Stack>
         </Grid>
       </Grid>
