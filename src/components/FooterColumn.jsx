@@ -1,11 +1,10 @@
 import React from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 
-const FooterColumn = ({ xs, content }) => { 
+const FooterColumn = ({ xs, children }) => { // Use children instead of content
   return (
     <Grid item xs={xs} sx={{ border: '1px solid white', padding: 1, minHeight: '200px' }}>
-      <Typography variant="body1">{content}</Typography>
-      {/* You can add more content or structure here as needed */}
+      {children} {/* Render children here */}
     </Grid>
   );
 };
