@@ -14,7 +14,12 @@ export const theme = createTheme({
   typography: {
     fontFamily: "Roboto, sans-serif",
     h1: {
+      fontFamily: "'Kanit', sans-serif",
       color: "#FFFFFF",
+    },
+    h6: {
+      fontFamily: "'Kanit', sans-serif",
+      fontWeight: 'bold',
     },
     body1: {
       color: "#969696",

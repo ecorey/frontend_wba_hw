@@ -17,7 +17,7 @@ const FooterComponent6 = () => {
       
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Link href="https://www.maths.ed.ac.uk/~v1ranick/papers/seifthreng.pdf" sx={{ margin: '8px 0', color: 'white', textDecoration: 'none', fontWeight: 'normal', fontSize: '0.9rem' }}>About</Link>
-        <Link href="https://www.maths.ed.ac.uk/~v1ranick/papers/seifthreng.pdf" sx={{ margin: '8px 0', color: 'white', textDecoration: 'none', fontWeight: 'normal', fontSize: '0.9rem' }}>Carrers</Link>
+        <Link href="https://www.maths.ed.ac.uk/~v1ranick/papers/seifthreng.pdf" sx={{ margin: '8px 0', color: 'white', textDecoration: 'none', fontWeight: 'normal', fontSize: '0.9rem' }}>Carriers</Link>
         <Link href="https://www.maths.ed.ac.uk/~v1ranick/papers/seifthreng.pdf" sx={{ margin: '8px 0', color: 'white', textDecoration: 'none', fontWeight: 'normal', fontSize: '0.9rem' }}>Blog</Link>
         <Link href="https://www.maths.ed.ac.uk/~v1ranick/papers/seifthreng.pdf" sx={{ margin: '8px 0', color: 'white', textDecoration: 'none', fontWeight: 'normal', fontSize: '0.9rem' }}>Contact Us</Link>
       </Box>
